@@ -1,0 +1,43 @@
+.a1 {
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  margin: 2% 6% !important;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  /* border: 1px solid !important; */
+  margin: 2% 5% !important;
+}
+#about > div {
+  width: 50%;
+  /* border: 2px solid yellow; */
+  margin-bottom: 10px;
+}
+
+#head_div {
+  margin-top: -10%;
+}
+
+.a2 {
+  /* border: 2px solid black !important; */
+  background-color: #f6f9ff;
+  padding: 2% 5%;
+}
+.a2 p {
+  line-height: 1.5rem !important;
+}
+
+.GetStartImage img {
+  width: 80% !important;
+  margin: auto;
+}
+.loginImage {
+    width: 80% !important;
+  margin: auto;
+  /* margin: 5% 0%; */
+  /* border: 1px solid; */
+}

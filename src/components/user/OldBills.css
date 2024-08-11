@@ -1,0 +1,18 @@
+.OldBills{
+    /* border:2px solid; */
+    height:60vh;
+}
+
+.head{
+    display:flex;
+    justify-content: center;
+    color: #444444;
+}
+
+.css-og52vs-MuiTableCell-root.MuiTableCell-head{
+    background-color: #1d4ea3 !important;
+}
+
+.css-1dydcym-MuiTableCell-root{
+    color:#9DA9B9 !important;
+}

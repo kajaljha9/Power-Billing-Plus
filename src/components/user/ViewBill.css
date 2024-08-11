@@ -1,0 +1,39 @@
+.ViewBill {
+  /* border:2px solid; */
+  height: 60vh;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.head h3 {
+  color: #444444;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 5%; */
+}
+
+.table {
+  margin: 5% 0 0 0;
+}
+
+.rowname {
+  background-color: #1d4ea3;
+}
+
+.css-1ndpvdd-MuiTableCell-root{
+    color:#fff !important; 
+}
+
+.css-1yhpg23-MuiTableCell-root{
+    color:#9DA9B9 !important;
+}
+
+.btn2{
+    background-color: #1D4EA3 !important;
+}

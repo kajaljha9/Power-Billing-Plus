@@ -7,7 +7,7 @@
   /* margin-bottom: 0px; */
   padding-bottom: 0;
   justify-content: space-around;
-
+  margin-bottom: 0%;
 }
 
 .f1{
@@ -47,5 +47,4 @@ p{
   bottom: 0;
   right: 0;
   width: 100%;
-  /
 }

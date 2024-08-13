@@ -35,7 +35,7 @@ const Header = () => {
         <a href="##" onClick={() => navigate("/")}>
           About
         </a>
-        <a href="##">Profile</a>
+        <a href="##" onClick={() => navigate("/profile")}>Profile</a>
         <a href="##" onClick={() => navigate("/viewbill")}>View Bill</a>
         <a href="##">New Connection</a>
         <a

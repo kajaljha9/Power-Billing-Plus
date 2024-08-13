@@ -1,8 +1,8 @@
 import './App.css';
-import Header from "././components/user/Header";
-import Footer from "././components/user/Footer";
-// import LandingPage from './components/user/LandingPage';
-import AllRoutes from './components/AllRoutes/AllRoutes';
+// import Header from "././components/user/Header";
+// import Footer from "././components/user/Footer";
+// import AllRoutes from './components/AllRoutes/AllRoutes';
+import AdminLogin from "./components/admin/AdminLogin";
 
 
 function App() {
@@ -10,9 +10,10 @@ function App() {
 
   return (
     <div>
-    <Header/>
+    {/* <Header/>
      <AllRoutes/>
-     <Footer/>
+     <Footer/> */}
+     <AdminLogin/>
     </div>
   )
 }

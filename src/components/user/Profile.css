@@ -1,0 +1,49 @@
+.p1 {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  /* */
+  padding: 2%;
+  border-radius: 5%;
+  width: 35%;
+  margin: auto;
+  margin-bottom: 5%;
+  display: flex;
+  gap: 10% !important;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5%;
+  background-color: #f6f9ff;
+}
+
+.div1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.div1 {
+  width: 40%;
+  display: flex;
+  align-content: center;
+ 
+}
+.div2 {
+  padding: 0%;
+  width: 60%;
+  display: flex;
+  padding: 0% 0% 5% 0%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5% !important;
+ 
+  margin: 0% !important;
+}
+.div2 button{
+    width: 50%;
+    padding: 5px !important;
+}
+
+p {
+  margin: 0% !important;
+}

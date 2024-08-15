@@ -1,8 +1,10 @@
 .a1 {
+  /* border: 2px solid pink; */
   display: flex;
-  justify-content: space-around !important;
   align-items: center;
-  margin: 2% 6% !important;
+  /* margin: 2% 6% !important; */
+  margin:0 !important;
+  padding: 0 !important;
 }
 
 #about {
@@ -18,8 +20,9 @@
   margin-bottom: 10px;
 }
 
-#head_div {
-  margin-top: -10%;
+.head_div {
+  /* border: 2px solid blue; */
+  margin: 0 0 0 2%;
 }
 
 .a2 {
@@ -27,6 +30,7 @@
   background-color: #f6f9ff;
   padding: 2% 5%;
 }
+
 .a2 p {
   line-height: 1.5rem !important;
 }
@@ -35,9 +39,13 @@
   width: 80% !important;
   margin: auto;
 }
+
 .loginImage {
-    width: 80% !important;
-  margin: auto;
-  /* margin: 5% 0%; */
-  /* border: 1px solid; */
+  width: 50% !important;
+  /* border: 1px solid green; */
+}
+
+.contbtn {
+  display: flex;
+  gap: 2rem;
 }

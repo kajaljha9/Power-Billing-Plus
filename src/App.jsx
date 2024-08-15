@@ -1,21 +1,17 @@
-import './App.css';
-// import Header from "././components/user/Header";
-// import Footer from "././components/user/Footer";
-// import AllRoutes from './components/AllRoutes/AllRoutes';
-import AdminLogin from "./components/admin/AdminLogin";
+import "./App.css";
+// import LandingPage from "./components/user/LandingPage";
+import AllRoutes from "./components/AllRoutes/AllRoutes";
+
+
 
 
 function App() {
-  
-
   return (
     <div>
-    {/* <Header/>
+     {/* <LandingPage/>  */}
      <AllRoutes/>
-     <Footer/> */}
-     <AdminLogin/>
     </div>
-  )
+  );
 }
 
 export default App;

@@ -7,6 +7,8 @@ import Payment from "../user/Payment";
 import Profile from "../user/Profile";
 import ForgotPassword from "../user/ForgotPassword";
 import AdminLogin from "../admin/AdminLogin";
+import AdminProfile from '../admin/AdminProfile';
+import GenerateBill from "../admin/GenerateBill";
 
 const AllRoutes = () => {
   return (
@@ -20,6 +22,10 @@ const AllRoutes = () => {
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/forgotpassword" element={<ForgotPassword/>}/>
         <Route path="/adminlogin" element={<AdminLogin/>}/>
+        <Route path="/adminprofile" element={<AdminProfile/>}/>
+        <Route path="/generatebill" element={<GenerateBill/>}/>
+
+
       </Routes>
     </div>
   );

@@ -1,17 +1,21 @@
+.Profile{
+  /* border: 10px solid #000; */
+  height: 73vh;
+  /* margin-top: 6rem; */
+}
 .p1 {
   display: flex;
   justify-content: center;
 }
 
 .card {
-  /* */
   padding: 2%;
   border-radius: 5%;
-  width: 35%;
+  width: 45%;
   margin: auto;
   margin-bottom: 5%;
   display: flex;
-  gap: 10% !important;
+  gap: 15% !important;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5%;
   background-color: #f6f9ff;
@@ -20,7 +24,7 @@
 .div1 img {
   width: 100%;
   object-fit: cover;
-  height: 100%;
+  height: 95%;
 }
 .div1 {
   width: 40%;
@@ -36,7 +40,6 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 5% !important;
- 
   margin: 0% !important;
 }
 .div2 button{

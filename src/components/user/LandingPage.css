@@ -12,7 +12,7 @@
   justify-content: space-around !important;
   align-items: center;
   /* border: 1px solid !important; */
-  margin: 2% 5% !important;
+  /* margin: 2% 5% !important; */
 }
 #about > div {
   width: 50%;
@@ -36,7 +36,7 @@
 }
 
 .GetStartImage img {
-  width: 80% !important;
+  width: 83% !important;
   margin: auto;
 }
 
@@ -48,4 +48,17 @@
 .contbtn {
   display: flex;
   gap: 2rem;
+}
+
+.a2 img{
+   width:100%;
+}
+
+.a3 img{
+  width:100%;
+}
+
+.a4 img{
+  width: 100%;
+  margin-bottom: 5%;
 }

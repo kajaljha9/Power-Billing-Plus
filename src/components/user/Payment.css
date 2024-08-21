@@ -1,30 +1,28 @@
 .b1 {
-  /* border: 2px solid; */
+  border: 2px solid;
   display: flex;
-  align-content: center;
   justify-content: center;
 }
 
 .b2 {
+  border: 2px solid green;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
 .b3 {
-  align-items: center;
+  border: 2px solid pink;
 }
 
 .Payment {
-  /* border:2px solid blue; */
+  border:2px solid blue;
   width: 50%;
   margin: 1% auto;
   background-color: #f6f9ff;
   display: flex;
   align-content: center;
   justify-content: center;
-  /* margin:1%; */
-  /* border: 2px solid black; */
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5%;
   /* margin:1% 15%; */

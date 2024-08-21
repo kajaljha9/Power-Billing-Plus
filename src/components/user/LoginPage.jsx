@@ -14,6 +14,8 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -26,11 +28,14 @@ const LoginPage = () => {
 
   const navigate = useNavigate();
   return (
-    <div className="LoginPage">
-      <div className="logbox">
+    <>
+      <Header />
+      <div className="LoginPage">
         <div className="login">
           <div className="loginfo">
-            <h3>Log in</h3>
+            <h2>Power Billing Plus</h2>
+            <br />
+            <h3>User Login</h3>
             <br />
             <TextField
               id="filled-basic"
@@ -80,9 +85,10 @@ const LoginPage = () => {
             <img src={LoginPageImage} alt="app_img"></img>
           </div>
         </div>
+        <br />
       </div>
-      <br />
-    </div>
+      <Footer />
+    </>
   );
 };
 

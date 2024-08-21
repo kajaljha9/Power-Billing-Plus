@@ -1,9 +1,13 @@
 import "./ForgotPassword.css";
 import Button from "@mui/material/Button";
 import LoginPageImage from "../../assets/hero-img.png.svg";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const ForgotPassword = () => {
   return (
+    <>
+    <Header/>
     <div className="ForgotPassword">
     
       <div className="fp1">
@@ -34,6 +38,9 @@ const ForgotPassword = () => {
         <img src={LoginPageImage} alt="app_img"></img>
       </div>
     </div>
+    <br/>
+    <Footer/>
+    </> 
   );
 };
 

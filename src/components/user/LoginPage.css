@@ -1,3 +1,5 @@
+
+
 .head {
   display: flex;
   justify-content: flex-start;
@@ -7,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height:76vh;
 }
 
 .loginfo {
@@ -15,21 +18,8 @@
   margin-left: 10%;
 }
 
-.loginImage {
-  /* border:2px solid; */
-  width: 300px;
-  height: auto;
-  margin: 70px 30px 0 300px;
-  /* padding: 20px; */
-  /* position: fixed; */
-}
 
-.logbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px hsla(0, 0%, 88.6%, 0.2);
-}
+
 
 .fp a {
   text-decoration: none;

@@ -12,6 +12,9 @@ import AdminProfile from "../admin/AdminProfile";
 import GenerateBill from "../admin/GenerateBill";
 import AddUser from "../admin/AddUser";
 import ManageUser from "../admin/ManageUser";
+import Dashboard from "../admin/Dashboard/Dashboard";
+import Reports from "../admin/Reports/Reports";
+import Bill from "../admin/Bill";
 
 const AllRoutes = () => {
   return (
@@ -26,10 +29,14 @@ const AllRoutes = () => {
         <Route path="/payment" element={<Payment />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/adminlogin" element={<AdminLogin />} />
-        <Route path="/adminprofile" element={<AdminProfile />} />
-        <Route path="/generatebill" element={<GenerateBill />} />
-        <Route path="/adduser" element={<AddUser />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/reports" element={<Reports />} />
+
         <Route path="/manageuser" element={<ManageUser />} />
+        <Route path="/adduser" element={<AddUser />} />
+        <Route path="/generatebill" element={<GenerateBill />} />
+        <Route path="/bill" element={<Bill />} />
+        <Route path="/adminprofile" element={<AdminProfile />} />
       </Routes>
     </div>
   );

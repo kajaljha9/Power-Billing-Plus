@@ -1,14 +1,16 @@
 import Navbar from "./Navbar";
 import "./AddUser.css";
-// import "./GenerateBill.css";
+import "./GenerateBill.css";
 import Button from "@mui/material/Button";
 import { FormControl, Grid, InputLabel, OutlinedInput } from "@mui/material";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { useNavigate } from "react-router-dom";
 
 const GenerateBill = () => {
+  const navigate = useNavigate();
   return (
     <div className="AddUser">
       <Navbar />
@@ -25,8 +27,8 @@ const GenerateBill = () => {
             <OutlinedInput id="outlined-adornment-password" label="UID" />
           </FormControl>
 
-          <Grid container>
-            <Grid item md={6}>
+          <Grid container gap={1}>
+            <Grid item md={5.9}>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={["DatePicker"]}>
                   <DatePicker label="Date" />
@@ -34,7 +36,7 @@ const GenerateBill = () => {
               </LocalizationProvider>
             </Grid>
 
-            <Grid item md={6}>
+            <Grid item md={5.9}>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={["DatePicker"]}>
                   <DatePicker label="Due Date" />
@@ -57,7 +59,9 @@ const GenerateBill = () => {
         </div>
         <br />
         <div className="mubtn">
-          <Button variant="contained">Calculate</Button>
+          <Button variant="contained" onClick={() => navigate("/bill")}>
+            Calculate
+          </Button>
         </div>
       </div>
     </div>

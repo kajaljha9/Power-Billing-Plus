@@ -17,20 +17,17 @@ const LandingPage = () => {
         <div className="a1">
           <div className="head_div">
             <div>
-              <h1>
-                <b>Welcome to Power Billing Plus!</b>
-              </h1>
+              <h1>Welcome to Power Billing Plus!</h1>
               <br />
-            </div>
-            <div>
               <h4>Efficient and Effective Electricity Billing System</h4>
-              <br />
             </div>
+            <br/>
+
             <div className="contbtn">
-              <Button variant="contained" onClick={() => navigate("/login")}>
+              <Button sx={{zIndex:"-100"}} variant="contained" onClick={() => navigate("/login")}>
                 Continue as User
               </Button>
-              <Button
+              <Button sx={{zIndex:"-100"}}
                 variant="contained"
                 onClick={() => navigate("/adminlogin")}
               >

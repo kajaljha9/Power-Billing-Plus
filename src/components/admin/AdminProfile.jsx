@@ -9,7 +9,7 @@ const AdminProfile = () => {
    
     <div className="AdminProfile">
       <Navbar />
-      <div className="mainbox">
+      <div className="userDetails">
      
         <div className="a">
           &nbsp;&nbsp;<h2>Your Profile</h2>
@@ -19,7 +19,7 @@ const AdminProfile = () => {
           <div className="b">
             <ul>
               <li>
-                Admin id: <b>110A</b>
+                AdminID: <b>110A</b>
               </li>
               <li>
                 Name: <b>Adela Parkson</b>
@@ -28,7 +28,7 @@ const AdminProfile = () => {
                 Address:<b>New Delhi</b>
               </li>
               <li>
-                Contact No.: <b>8888888888</b>
+                ContactNo.: <b>8888888888</b>
               </li>
               <li>
                 Email: <b>adela98@gmail.com</b>
@@ -42,8 +42,8 @@ const AdminProfile = () => {
             <div>
               <img src={Avatar} alt="Avatar" />
             </div>
-            <div>
-              <Button variant="contained" color="success">
+            <div className="editbtn">
+              <Button sx={{width:"fit-content"}} variant="contained" color="success">
                 Edit
               </Button>
             </div>

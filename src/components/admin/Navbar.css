@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0%;
   padding: 0%;
 }
@@ -9,6 +9,7 @@
   width: 200px;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 6px rgba(39, 37, 37, 0.5);
+  position: sticky;
 }
 
 .div1 {
@@ -60,10 +61,10 @@ li {
 
 
 .div2 nav ul li:hover {
-  /* font-size: 16.5px; */
   color: #4318ff;
 }
 
 .link:hover{
     color: #2B3674;
-}
+
+

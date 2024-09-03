@@ -9,27 +9,36 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { useNavigate } from "react-router-dom";
 
-function createData(uid, name, address, serviceno, amount, action) {
-  return { uid, name, address, serviceno, amount, action};
+function createData(uid, name, address, serviceno, amount) {
+  return { uid, name, address, serviceno, amount };
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData("110", "xyz", "New Delhi", 110, 12345),
+  createData("111", "abc", "Jaipur", 111, 10000),
+  createData("112", "pqr", "Banglore", 112, 12344),
+  createData("113", "def", "Gurugram", 113, 12456),
+  createData("114", "ghi", "Dwarka", 114, 15678),
+  createData("115", "jkl", "Noida", 115, 17098),
+  createData("116", "mno", "Old  ", 116, 16345)
 ];
 
 const ManageUser = () => {
+  const navigate = useNavigate();
   return (
     <div className="ManageUser">
       <Navbar />
       <div className="users">
         <div className="addbtn">
-          <Button variant="contained">Add User</Button>
+          <Button variant="contained" onClick={() => navigate("/adduser")}>
+            Add User
+          </Button>
         </div>
+        <br />
         <div className="tablebody">
           <div className="udetail">
             <h2>User Details</h2>
@@ -38,40 +47,40 @@ const ManageUser = () => {
           <div className="usertable">
             <TableContainer component={Paper}>
               <Table
-                sx={{ minWidth: 650 }}
+                stickyHeader
+                sx={{ minWidth: 550 }}
                 size="small"
                 aria-label="a dense table"
               >
                 <TableHead>
                   <TableRow>
                     <TableCell align="left">UID</TableCell>
-                    <TableCell align="right">Name</TableCell>
-                    <TableCell align="right">Address</TableCell>
-                    <TableCell align="right">Service No.</TableCell>
-                    <TableCell align="right">Amount</TableCell>
-                    <TableCell align="right">Action</TableCell>
+                    <TableCell align="left">Name</TableCell>
+                    <TableCell align="left">Address</TableCell>
+                    <TableCell align="left">Service No.</TableCell>
+                    <TableCell align="left">Amount</TableCell>
+                    <TableCell align="left">Action</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {rows.map((row) => (
-                    <TableRow
-                      key={row.uid}
-                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                    >
-                      <TableCell align="left" component="th" scope="row">
-                        {row.uid}
+                    <TableRow key={row.uid}>
+                      <TableCell align="left">{row.uid}</TableCell>
+                      <TableCell align="left">{row.name}</TableCell>
+                      <TableCell align="left">{row.address}</TableCell>
+                      <TableCell align="left">{row.serviceno}</TableCell>
+                      <TableCell align="left">{row.amount}</TableCell>
+                      <TableCell align="left">
+                        <EditIcon />
+                        <DeleteIcon />
                       </TableCell>
-                      <TableCell align="right">{row.name}</TableCell>
-                      <TableCell align="right">{row.address}</TableCell>
-                      <TableCell align="right">{row.serviceno}</TableCell>
-                      <TableCell align="right">{row.amount}</TableCell>
-                      <TableCell align="right">{row.action}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
               </Table>
             </TableContainer>
           </div>
+          <br />
         </div>
       </div>
     </div>

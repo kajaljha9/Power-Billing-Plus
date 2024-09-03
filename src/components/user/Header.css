@@ -108,13 +108,14 @@ ul {
 
 /* Styling for the icon-name container */
 .icon-name {
-  width: 25%;
-  display: flex;
-  align-items: center;
+  width: auto;
+  display: contents;
+  /* align-items: center; */
   width: max-content;
   cursor: pointer;
   gap: 10px;
-  /* border: 2px solid green; */
+  border: 2px solid green;
+  padding: auto;
 }
 
 /* Styling for the icon */
@@ -129,10 +130,16 @@ ul {
   border:2px solid pink;
 } */
 
-.name h3 {
+.name  {
   margin: 0;
   padding: 0;
   font-size: 1.2rem;
+  display: block;
+  position:inherit;
+}
+h3{
+  font-size: initial;
+
 }
 
 /* Navbar styling */
@@ -140,7 +147,7 @@ ul {
 .navbar {
   /* border: 1px solid blue; */
   display: flex;
-  width: 40%;
+  width: auto;
 }
 
 .navbar nav ul {

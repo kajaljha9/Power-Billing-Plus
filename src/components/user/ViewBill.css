@@ -1,39 +1,55 @@
-.ViewBill {
-  /* border:2px solid; */
-  height: 76vh;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.head {
+.ViewBill {
+  border: 2px solid pink;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 67vh;
+}
+
+.vob {
+  /* border:2px solid yellow; */
+  display: flex;
+  justify-content: flex-end;
+  width: -webkit-fill-available;
 }
 
 .head h3 {
   color: #444444;
 }
 
-.btn1 {
+.viewbtn {
   display: flex;
   justify-content: flex-end;
-  /* margin-right: 5%; */
 }
 
-.table {
-  margin: 5% 0 0 0;
+.vob {
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+}
+
+.billtable {
+  width: fit-content;
 }
 
 .rowname {
   background-color: #1d4ea3;
 }
 
-.css-1ndpvdd-MuiTableCell-root{
-    color:#fff !important; 
+.css-1ndpvdd-MuiTableCell-root {
+  color: #fff !important;
 }
 
-.css-1yhpg23-MuiTableCell-root{
-    color:#9DA9B9 !important;
+.css-1yhpg23-MuiTableCell-root {
+  color: #9da9b9 !important;
 }
 
-.btn2{
-    background-color: #1D4EA3 !important;
+.btn2 {
+  background-color: #1d4ea3 !important;
 }

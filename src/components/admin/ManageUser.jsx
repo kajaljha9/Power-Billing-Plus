@@ -24,6 +24,13 @@ const rows = [
   createData("113", "def", "Gurugram", 113, 12456),
   createData("114", "ghi", "Dwarka", 114, 15678),
   createData("115", "jkl", "Noida", 115, 17098),
+  createData("116", "mno", "Old  ", 116, 16345),
+  createData("110", "xyz", "New Delhi", 110, 12345),
+  createData("111", "abc", "Jaipur", 111, 10000),
+  createData("112", "pqr", "Banglore", 112, 12344),
+  createData("113", "def", "Gurugram", 113, 12456),
+  createData("114", "ghi", "Dwarka", 114, 15678),
+  createData("115", "jkl", "Noida", 115, 17098),
   createData("116", "mno", "Old  ", 116, 16345)
 ];
 
@@ -38,39 +45,56 @@ const ManageUser = () => {
             Add User
           </Button>
         </div>
-        <br />
+        <br /> <br />
         <div className="tablebody">
           <div className="udetail">
             <h2>User Details</h2>
           </div>
           <br />
-          <div className="usertable">
-            <TableContainer component={Paper}>
-              <Table
-                stickyHeader
-                sx={{ minWidth: 550 }}
-                size="small"
-                aria-label="a dense table"
-              >
+          <div className="userdetail">
+            <TableContainer component={Paper} className="userdetail">
+              <Table stickyHeader size="small" aria-label="a dense table">
                 <TableHead>
                   <TableRow>
-                    <TableCell align="left">UID</TableCell>
-                    <TableCell align="left">Name</TableCell>
-                    <TableCell align="left">Address</TableCell>
-                    <TableCell align="left">Service No.</TableCell>
-                    <TableCell align="left">Amount</TableCell>
-                    <TableCell align="left">Action</TableCell>
+                    <TableCell sx={{ width: "auto" }} align="left">
+                      Name
+                    </TableCell>
+                    <TableCell sx={{ width: "auto" }} align="left">
+                      Address
+                    </TableCell>
+                    <TableCell sx={{ width: "auto" }} align="left">
+                      UID
+                    </TableCell>
+                    <TableCell sx={{ width: "auto" }} align="left">
+                      Service No.
+                    </TableCell>
+                    <TableCell sx={{ width: "auto" }} align="left">
+                      Amount
+                    </TableCell>
+                    <TableCell sx={{ width: "auto" }} align="left">
+                      Action
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {rows.map((row) => (
                     <TableRow key={row.uid}>
-                      <TableCell align="left">{row.uid}</TableCell>
-                      <TableCell align="left">{row.name}</TableCell>
-                      <TableCell align="left">{row.address}</TableCell>
-                      <TableCell align="left">{row.serviceno}</TableCell>
-                      <TableCell align="left">{row.amount}</TableCell>
-                      <TableCell align="left">
+                      <TableCell sx={{ width: "auto" }} align="left">
+                        {row.uid}
+                      </TableCell>
+                      <TableCell sx={{ width: "auto" }} align="left">
+                        {row.name}
+                      </TableCell>
+                      <TableCell sx={{ width: "auto" }} align="left">
+                        {row.address}
+                      </TableCell>
+                      <TableCell sx={{ width: "auto" }} align="left">
+                        {row.serviceno}
+                      </TableCell>
+                      <TableCell sx={{ width: "auto" }} align="left">
+                        {row.amount}
+                      </TableCell>
+                      <TableCell sx={{ width: "auto" }} align="left">
                         <EditIcon />
                         <DeleteIcon />
                       </TableCell>

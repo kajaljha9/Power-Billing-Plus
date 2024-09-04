@@ -21,13 +21,18 @@ const LandingPage = () => {
               <br />
               <h4>Efficient and Effective Electricity Billing System</h4>
             </div>
-            <br/>
+            <br />
 
             <div className="contbtn">
-              <Button sx={{zIndex:"-100"}} variant="contained" onClick={() => navigate("/login")}>
+              <Button
+                // sx={{ zIndex: "-100" }}
+                variant="contained"
+                onClick={() => navigate("/login")}
+              >
                 Continue as User
               </Button>
-              <Button sx={{zIndex:"-100"}}
+              <Button
+                // sx={{ zIndex: "-100" }}
                 variant="contained"
                 onClick={() => navigate("/adminlogin")}
               >

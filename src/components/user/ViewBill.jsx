@@ -34,14 +34,14 @@ const ViewBill = () => {
   return (
     <>
       <Header />
-      <br/>
+      <br />
       <div className="ViewBill">
-        <div className="head">
-          <h3>Your Bill</h3>
+        <div className="billhead">
+          <h2>Your Bill</h2>
         </div>
 
-        <div className="btn1">
-          <Button
+        <div className="vob">
+          <Button className="viewbtn"
             variant="contained"
             sx={{ justifyContent: "flex-end " }}
             onClick={() => navigate("/oldbills")}
@@ -49,9 +49,10 @@ const ViewBill = () => {
             View Older Bills
           </Button>
         </div>
-        <div className="table">
+
+        <div className="billtable">
           <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 700 }} aria-label="simple table">
+            <Table sx={{ minWidth: 750 }} aria-label="simple table">
               <TableHead>
                 <TableRow className="rowname">
                   <TableCell className="r1" align="center">
@@ -95,7 +96,7 @@ const ViewBill = () => {
             </Table>
           </TableContainer>
         </div>
-      <br />
+        <br />
       </div>
       <Footer />
     </>

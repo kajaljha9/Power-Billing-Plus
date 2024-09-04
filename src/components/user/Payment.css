@@ -1,23 +1,35 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.paybox{
+  /* border:2px solid magenta; */
+  margin:0 1rem 0 2rem;
+}
+
 .b1 {
-  border: 2px solid;
+  /* border: 2px solid; */
   display: flex;
   justify-content: center;
 }
 
 .b2 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 }
 
-.b3 {
+/* .b3 {
   border: 2px solid pink;
-}
+} */
 
 .Payment {
-  border:2px solid blue;
+  /* border:2px solid blue; */
   width: 50%;
+  height:87vh;
   margin: 1% auto;
   background-color: #f6f9ff;
   display: flex;
@@ -26,4 +38,12 @@
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5%;
   /* margin:1% 15%; */
+}
+
+.paymentimg img{
+  height:20vh;
+}
+
+.confirmbtn{
+  width:fit-content;
 }

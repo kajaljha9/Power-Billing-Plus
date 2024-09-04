@@ -1,12 +1,9 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-// import Header from "./Header";
-// import Footer from "./Footer";
 import "./LoginPage.css";
 import LoginPageImage from "../../assets/hero-img.png.svg";
 import { useNavigate } from "react-router-dom";
-
 import IconButton from "@mui/material/IconButton";
 import FilledInput from "@mui/material/FilledInput";
 import InputLabel from "@mui/material/InputLabel";

@@ -79,7 +79,7 @@ const LoginPage = () => {
           </div>
 
           <div className="loginImage">
-            <img src={LoginPageImage} alt="app_img"></img>
+            <img className="loginImage2" src={LoginPageImage} alt="app_img"></img>
           </div>
         </div>
         <br />

@@ -31,8 +31,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   }
 }));
 
-function createData(Invoice, Name, Due_Date, Amount, Status) {
-  return { Invoice, Name, Due_Date, Amount, Status };
+function createData(Invoice, Name, Due_Date, Amount) {
+  return { Invoice, Name, Due_Date, Amount };
 }
 
 const rows = [
@@ -40,29 +40,68 @@ const rows = [
     "A11289678234",
     "Albina_SHrestha",
     "July_13_2018",
-    "Rs_2000",
-    <Button variant="contained" color="success">
-      Paid
-    </Button>
+    "Rs_2000"
   ),
   createData(
     "A11289678234",
     "Albina_SHrestha",
     "July_13_2018",
-    "Rs_2000",
-    <Button variant="contained" color="success">
-      Paid
-    </Button>
+    "Rs_2000"
   ),
   createData(
     "A11289678234",
     "Albina_SHrestha",
     "July_13_2018",
-    "Rs_2000",
-    <Button variant="contained" color="success">
-      Paid
-    </Button>
-  )
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000"
+  ),
 ];
 
 const OldBills = () => {
@@ -81,8 +120,8 @@ const OldBills = () => {
         <br />
 
         <div className="table2">
-          <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 700 }} aria-label="customized table">
+          <TableContainer component={Paper} className="table2">
+            <Table stickyHeader  aria-label="customized table">
               <TableHead>
                 <TableRow className="tr1">
                   <StyledTableCell align="center">Invoice</StyledTableCell>
@@ -106,7 +145,9 @@ const OldBills = () => {
                       {row.Amount}
                     </StyledTableCell>
                     <StyledTableCell align="center">
-                      {row.Status}
+                      <Button variant="contained" color="success">
+                        Paid
+                      </Button>
                     </StyledTableCell>
                   </StyledTableRow>
                 ))}

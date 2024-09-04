@@ -1,10 +1,8 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-// import Header from "./Header";
-// import Footer from "./Footer";
 import "./LoginPage.css";
-import LoginPageImage from "../../assets/hero-img.png.svg";
+import SignupImage from "../../assets/hero-img.png.svg";
 import { useNavigate } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import Input from "@mui/material/Input";
@@ -15,6 +13,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import Header from "./Header";
 import Footer from "./Footer";
+import "./SignUp.css";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -93,8 +92,8 @@ const SignUp = () => {
             </div>
           </div>
 
-          <div className="loginImage">
-            <img src={LoginPageImage} alt="app_img"></img>
+          <div className="signupImage">
+            <img className="signupImage2" src={SignupImage} alt="app_img"></img>
           </div>
         </div>
         <br />

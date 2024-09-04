@@ -43,3 +43,16 @@
 .userdetail table{
     background-color: #f6f9ff;
 }
+
+@media (max-width: 768px) {
+  .users {
+    /* border: 2px solid green; */
+    height: 100vh;
+   
+    
+  }
+  .userdetail{
+    /* border:2px solid purple; */
+    width:60vw;
+  }
+}

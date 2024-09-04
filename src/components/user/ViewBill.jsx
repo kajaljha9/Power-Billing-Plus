@@ -51,7 +51,7 @@ const ViewBill = () => {
         <div className="billtable">
           <TableContainer component={Paper} className="billtable1">
             <Table stickyHeader  aria-label="simple table">
-              <TableHead stickyHeader style={{backgroundColor: "black"  }}>
+              <TableHead >
                 <TableRow className="rowname" >
                   <TableCell className="r1" align="center">
                     Invoice
@@ -60,7 +60,7 @@ const ViewBill = () => {
                     Name
                   </TableCell>
                   <TableCell className="r1" align="center">
-                    Due_Date
+                    DueDate
                   </TableCell>
                   <TableCell className="r1" align="center">
                     Amount
@@ -80,7 +80,7 @@ const ViewBill = () => {
                       {row.Invoice}
                     </TableCell>
                     <TableCell align="center">{row.Name}</TableCell>
-                    <TableCell align="center">{row.Due_Date}</TableCell>
+                    <TableCell align="center">{row.DueDate}</TableCell>
                     <TableCell align="center">{row.Amount}</TableCell>
                     <TableCell
                       align="center"

@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import "./AddUser.css";
-import "./GenerateBill.css";
+// import "./GenerateBill.css";
 import Button from "@mui/material/Button";
 import { FormControl, Grid, InputLabel, OutlinedInput } from "@mui/material";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";

@@ -1,9 +1,12 @@
+import { Grid } from "@mui/material";
 import "./Footer.css";
 import { Outlet, Link } from "react-router-dom";
 
 
 function Footer() {
   return (
+    <Grid container >
+    
     <div className="Footer">
       <div className="f1">
         <h3>PowerBilling Plus</h3>
@@ -43,6 +46,7 @@ function Footer() {
         </div>
       </div>
     </div>
+    </Grid>
   );
 }
 

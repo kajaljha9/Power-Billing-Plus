@@ -7,11 +7,12 @@ import Services from "../../assets/services.svg";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
+import { Grid } from "@mui/material";
 
 const LandingPage = () => {
   const navigate = useNavigate();
   return (
-    <>
+    <Grid container >
       <Header />
       <div className="LandingPage">
         <div className="a1">
@@ -41,9 +42,12 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="loginImage">
+          {/* <div className="loginImage">
             <img src={LoginPageImage} alt="app_img"></img>
-          </div>
+          </div> */}
+          <Grid items sx={{}}>
+            <img src={LoginPageImage} alt="app_img"></img>
+          </Grid>
         </div>
         <br />
         <br />
@@ -85,8 +89,11 @@ const LandingPage = () => {
         </div>
       </div>
       <br />
+      <div className="footer">
+
       <Footer />
-    </>
+      </div>
+    </Grid>
   );
 };
 

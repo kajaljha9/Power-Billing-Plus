@@ -1,18 +1,15 @@
-.OldBills{
-    /* border:2px solid red; */
-    height:73vh;
+.OldBills {
+  /* border: 2px solid green; */
+  height: 73vh;
+  width:80vw;
+  margin:auto;
 }
 
-.head{
-    display:flex;
-    justify-content: center;
-    color: #444444;
+
+.css-og52vs-MuiTableCell-root.MuiTableCell-head {
+  background-color: #1d4ea3 !important;
 }
 
-.css-og52vs-MuiTableCell-root.MuiTableCell-head{
-    background-color: #1d4ea3 !important;
-}
-
-.css-1dydcym-MuiTableCell-root{
-    color:#9DA9B9 !important;
+.css-1dydcym-MuiTableCell-root {
+  color: #9da9b9 !important;
 }

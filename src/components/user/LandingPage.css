@@ -13,7 +13,6 @@
   /* margin: 2% 6% !important; */
   margin:0 !important;
   padding: 0 !important;
-  /* border:2px solid rgb(11, 53, 221); */
 }
 
 #about {
@@ -85,4 +84,18 @@
   border: 1px;
   box-shadow: 5px ;
   margin-top: 10px  ;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  #about {
+    /* border:2px solid red; */
+    display: flex; 
+    flex-direction: column;
+  }
+  .a2, .GetStartImage{
+    margin:0;
+    padding:0;
+    width:100%;
+  }
 }

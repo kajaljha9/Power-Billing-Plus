@@ -13,20 +13,16 @@ import {
 import Header from "./Header";
 import Footer from "./Footer";
 
-function createData(Invoice, Name, Due_Date, Amount, Payment) {
-  return { Invoice, Name, Due_Date, Amount, Payment };
+function createData(Invoice, Name, DueDate, Amount) {
+  return { Invoice, Name, DueDate, Amount };
 }
 
 const rows = [
-  createData(
-    "A11289678234",
-    "Albina_SHrestha",
-    "August_13_2018",
-    "Rs_2000",
-    <Button className="btn2" variant="contained">
-      Make Payment
-    </Button>
-  )
+  createData("A11289678234", "Albina_SHrestha", "August_13_2018", "Rs_2000"),
+  createData("A11289678234", "Albina_SHrestha", "August_13_2018", "Rs_2000"),
+  createData("A11289678234", "Albina_SHrestha", "August_13_2018", "Rs_2000"),
+  createData("A11289678234", "Albina_SHrestha", "August_13_2018", "Rs_2000"),
+  createData("A11289678234", "Albina_SHrestha", "August_13_2018", "Rs_2000")
 ];
 
 const ViewBill = () => {
@@ -35,13 +31,15 @@ const ViewBill = () => {
     <>
       <Header />
       <br />
+      <br />
       <div className="ViewBill">
         <div className="billhead">
           <h2>Your Bill</h2>
         </div>
 
         <div className="vob">
-          <Button className="viewbtn"
+          <Button
+            className="viewbtn"
             variant="contained"
             sx={{ justifyContent: "flex-end " }}
             onClick={() => navigate("/oldbills")}
@@ -51,10 +49,10 @@ const ViewBill = () => {
         </div>
 
         <div className="billtable">
-          <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 750 }} aria-label="simple table">
-              <TableHead>
-                <TableRow className="rowname">
+          <TableContainer component={Paper} className="billtable1">
+            <Table stickyHeader  aria-label="simple table">
+              <TableHead stickyHeader style={{backgroundColor: "black"  }}>
+                <TableRow className="rowname" >
                   <TableCell className="r1" align="center">
                     Invoice
                   </TableCell>
@@ -88,7 +86,9 @@ const ViewBill = () => {
                       align="center"
                       onClick={() => navigate("/payment")}
                     >
-                      {row.Payment}
+                      <Button className="btn2" variant="contained">
+                        Make Payment
+                      </Button>
                     </TableCell>
                   </TableRow>
                 ))}

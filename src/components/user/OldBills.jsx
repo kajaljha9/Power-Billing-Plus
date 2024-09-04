@@ -44,6 +44,24 @@ const rows = [
     <Button variant="contained" color="success">
       Paid
     </Button>
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000",
+    <Button variant="contained" color="success">
+      Paid
+    </Button>
+  ),
+  createData(
+    "A11289678234",
+    "Albina_SHrestha",
+    "July_13_2018",
+    "Rs_2000",
+    <Button variant="contained" color="success">
+      Paid
+    </Button>
   )
 ];
 
@@ -51,12 +69,16 @@ const OldBills = () => {
   return (
     <>
       <Header />
-      <br/>
+      <br />
+      <br />
+      <br />
       <div className="OldBills">
-        <div className="head">
-          <h3>Your Old Bills</h3>
+        <div className="oldhead">
+          <div id="oldhead1">
+            <h2>Your Old Bills</h2>
+          </div>
         </div>
-        <br/>
+        <br />
 
         <div className="table2">
           <TableContainer component={Paper}>

@@ -4,12 +4,13 @@
 }
 
 .ViewBill {
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  height: 67vh;
+  height: 66vh;
+  width:80vw;
+  margin:auto;
 }
 
 .vob {
@@ -34,22 +35,21 @@
   width: fit-content;
 }
 
-.billtable {
-  width: fit-content;
+.billtable, .billtable1 {
+  /* border:2px solid green; */
+  height:50vh;
 }
 
-.rowname {
-  background-color: #1d4ea3;
-}
+ 
 
-.css-1ndpvdd-MuiTableCell-root {
+/* .css-1ndpvdd-MuiTableCell-root {
   color: #fff !important;
-}
+} */
 
 .css-1yhpg23-MuiTableCell-root {
-  color: #9da9b9 !important;
+  color: #686f79 !important;
 }
 
-.btn2 {
+.btn2 , .viewbtn{
   background-color: #1d4ea3 !important;
 }

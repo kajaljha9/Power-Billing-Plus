@@ -8,7 +8,8 @@ const AdminProfile = () => {
     <>
    
     <div className="AdminProfile">
-      <Navbar />
+    <div className="gnav"><Navbar /></div>
+      
       <div className="userDetails">
      
         <div className="a">

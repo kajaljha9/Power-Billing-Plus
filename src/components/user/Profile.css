@@ -1,6 +1,6 @@
 .Profile {
-  /* border: 10px solid #000; */
-  height: 73vh;
+  /* border: 5px solid red; */
+  height: 68vh;
   /* margin-top: 6rem; */
 }
 .p1 {
@@ -9,9 +9,10 @@
 }
 
 .card {
-  padding: 2%;
-  border-radius: 5%;
-  width: 45%;
+  /* border: 5px solid green; */
+  padding: 1%;
+  border-radius: 1%;
+  width: 40%;
   margin: auto;
   margin-bottom: 5%;
   display: flex;
@@ -32,7 +33,7 @@
   align-content: center;
 }
 .div2 {
-  padding: 0%;
+  /* border:2px solid brown; */
   width: 60%;
   display: flex;
   padding: 0% 0% 5% 0%;

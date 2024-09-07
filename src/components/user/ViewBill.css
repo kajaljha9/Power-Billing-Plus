@@ -58,16 +58,18 @@
 @media (max-width: 768px) {
 
   .ViewBill {
-    /* border:2px solid green; */
+    /* border:2px solid purple; */
     width:100vw;
     height:70vh;
   }
-  .billtable, .billtable1 {
+  .billtable {
     /* border:2px solid red; */
-    height:50vh;
-    width:90vw !important;
-    margin-left: 0 !important;
-    /* width:fit-content; */
-    /* margin-left: 1rem; */
+    width:100% !important;
+    
+    
+  }
+  .billtable1{
+    /* border:2px solid green; */
+    margin: 0 -5rem 0 2rem !important;
   }
 }

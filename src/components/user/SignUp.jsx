@@ -26,11 +26,11 @@ const SignUp = () => {
 
   const navigate = useNavigate();
   return (
-    <>
+    <div className="SignUp">
       <Header />
-      <div className="LoginPage">
-        <div className="login">
-          <div className="loginfo">
+      <div className="SignUp1">
+        <div className="signup">
+          <div className="signinfo">
             <h2>Power Billing Plus</h2>
             <br />
             <h3>Sign Up</h3>
@@ -80,7 +80,7 @@ const SignUp = () => {
             <br />
 
             <div>
-              <Button variant="contained">Signup</Button>
+              <Button sx={{width:"fit-content"}} variant="contained">Signup</Button>
             </div>
 
             <br />
@@ -99,7 +99,8 @@ const SignUp = () => {
         <br />
       </div>
       <Footer />
-    </>
+      
+    </div>
   );
 };
 

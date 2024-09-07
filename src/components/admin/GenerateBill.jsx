@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
-import "./AddUser.css";
-// import "./GenerateBill.css";
+import "./GenerateBill.css";
 import Button from "@mui/material/Button";
 import { FormControl, Grid, InputLabel, OutlinedInput } from "@mui/material";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
@@ -12,21 +11,22 @@ import { useNavigate } from "react-router-dom";
 const GenerateBill = () => {
   const navigate = useNavigate();
   return (
-    <div className="AddUser">
-      <Navbar />
+    <div className="GenerateBill">
+    <div className="gnav"><Navbar /></div>
+      
 
-      <div className="userDetails">
-        <div className="udhead">
+      <div className="genDetails">
+        <div className="gdhead">
           <h2>Calculate Bill</h2>
         </div>
         <br />
         <br />
-        <div className="details">
+        <div className="gdetails">
           <FormControl variant="outlined">
             <InputLabel htmlFor="outlined-adornment-password">UID</InputLabel>
             <OutlinedInput id="outlined-adornment-password" label="UID" />
           </FormControl>
-
+          <br/>
           <Grid container gap={1}>
             <Grid item md={5.9}>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -35,7 +35,7 @@ const GenerateBill = () => {
                 </DemoContainer>
               </LocalizationProvider>
             </Grid>
-
+            
             <Grid item md={5.9}>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={["DatePicker"]}>
@@ -44,12 +44,13 @@ const GenerateBill = () => {
               </LocalizationProvider>
             </Grid>
           </Grid>
-
+          <br/>
           <FormControl variant="outlined">
             <InputLabel htmlFor="outlined-adornment-password">Units</InputLabel>
             <OutlinedInput id="outlined-adornment-password" label="Email" />
           </FormControl>
-
+          <br/>
+          <br/>
           <FormControl variant="outlined">
             <InputLabel htmlFor="outlined-adornment-password">
               Bill Due
@@ -58,7 +59,8 @@ const GenerateBill = () => {
           </FormControl>
         </div>
         <br />
-        <div className="mubtn">
+        
+        <div className="calbtn">
           <Button variant="contained" onClick={() => navigate("/bill")}>
             Calculate
           </Button>

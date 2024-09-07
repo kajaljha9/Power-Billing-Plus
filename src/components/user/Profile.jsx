@@ -11,7 +11,7 @@ const Profile = () => {
       <div className="Profile">
       <br/>
         <div className="p1">
-          <h4>Your Profile</h4>
+          <h2>Your Profile</h2>
         </div>
         <br/>
         <div className="card">
@@ -32,7 +32,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <br/><br/><Footer />
+     <Footer />
     </>
   );
 };

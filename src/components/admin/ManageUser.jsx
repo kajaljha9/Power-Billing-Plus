@@ -38,7 +38,8 @@ const ManageUser = () => {
   const navigate = useNavigate();
   return (
     <div className="ManageUser">
-      <Navbar />
+    <div className="gnav"> <Navbar /></div>
+     
       <div className="users">
         <div className="addbtn">
           <Button variant="contained" onClick={() => navigate("/adduser")}>
@@ -46,7 +47,7 @@ const ManageUser = () => {
           </Button>
         </div>
         <br /> <br />
-        <div className="tablebody">
+        <div className="udtablebody">
           <div className="udetail">
             <h2>User Details</h2>
           </div>

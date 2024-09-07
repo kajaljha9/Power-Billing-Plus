@@ -30,9 +30,10 @@ const AddUser = () => {
 
   return (
     <div className="AddUser">
-      <Navbar />
+    <div className="gnav"><Navbar /></div>
+      
 
-      <div className="userDetails">
+      <div className="adduserDetails">
         <div className="udhead">
           <h2>Add User</h2>
         </div>
@@ -135,7 +136,7 @@ const AddUser = () => {
           </FormControl>
         </div>
         <br />
-        <div className="mubtn">
+        <div className="addubtn">
           <Button variant="contained">Add</Button>
         </div>
       </div>

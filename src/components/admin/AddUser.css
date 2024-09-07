@@ -4,7 +4,7 @@
   display: flex;
 }
 
-.userDetails {
+.adduserDetails {
   /* border: 3px solid brown; */
   padding: 1%;
   margin: 2% 0% 0% 2%;
@@ -23,12 +23,28 @@
   gap: 1rem;
 }
 
-.mubtn {
+.addubtn {
   display: flex;
   justify-content: end;
+  width: fit-content;
 }
 
-.mubtn button {
+.addubtn button {
   background-color: #4318ff;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .adduserDetails {
+    /* border: 2px solid green; */
+    height:65vh;
+    width: fit-content ;
+   
+    margin : 4.5rem 3rem 0 0
+  
+  }
+  .details{
+    /* border: 2px solid red; */
+  }
+
 }

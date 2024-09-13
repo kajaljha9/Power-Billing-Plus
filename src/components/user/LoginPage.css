@@ -10,6 +10,7 @@
   height: 76vh;
 }
 
+
 .loginfo {
   /* border:2px solid; */
   width: 30rem !important;
@@ -18,7 +19,7 @@
 
 .fp a {
   text-decoration: none;
-  color: #6c757d;
+  /* color: #6c757d; */
 }
 
 @media (max-width: 768px) {

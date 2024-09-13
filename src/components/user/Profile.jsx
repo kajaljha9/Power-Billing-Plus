@@ -26,8 +26,9 @@ const Profile = () => {
             <p>Password : *******</p><br/>
             <p>SCNO : 14596A</p><br/>
             <p>Customer ID : 11926</p><br/>
-            <Button variant="contained" color="success">
-              Edit
+            <Button variant="contained" color="success" 
+            // style={{ zIndex: -1, position: "relative" }}
+            >Edit
             </Button>
           </div>
         </div>

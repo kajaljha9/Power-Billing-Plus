@@ -35,10 +35,12 @@ const LoginPage = () => {
             <h3>User Login</h3>
             <br />
             <TextField
-              id="filled-basic"
+              id="textField"
               label="Email address"
               variant="filled"
+              style={{ zIndex: -1, position: "relative" }} // Adjust zIndex and position as needed
             />
+
             <br />
             <br />
             <FormControl sx={{ width: "25ch" }} variant="filled">
@@ -46,7 +48,9 @@ const LoginPage = () => {
                 Password
               </InputLabel>
               <FilledInput
-                id="filled-adornment-password"
+              id="textField"
+                style={{ zIndex: -1, position: "relative" }}
+                
                 type={showPassword ? "text" : "password"}
                 endAdornment={
                   <InputAdornment position="end">
@@ -79,7 +83,11 @@ const LoginPage = () => {
           </div>
 
           <div className="loginImage">
-            <img className="loginImage2" src={LoginPageImage} alt="app_img"></img>
+            <img
+              className="loginImage2"
+              src={LoginPageImage}
+              alt="app_img"
+            ></img>
           </div>
         </div>
         <br />

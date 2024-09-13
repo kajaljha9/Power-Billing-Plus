@@ -79,9 +79,12 @@ const LandingPage = () => {
         </div>
         <br />
         <br />
-        <div className="a3">
+       
+        <div className="a3" id="features">
           <img src={Features} alt="app_img"></img>
         </div>
+       
+       
         <br />
         <br />
         <div className="a4">

@@ -41,7 +41,8 @@ const ViewBill = () => {
           <Button
             className="viewbtn"
             variant="contained"
-            sx={{ justifyContent: "flex-end " }}
+            sx={{ justifyContent: "flex-end "}}
+            // style={{ zIndex: -1, position: "relative" }}
             onClick={() => navigate("/oldbills")}
           >
             View Older Bills
@@ -51,9 +52,11 @@ const ViewBill = () => {
         <div className="billtable">
           <TableContainer component={Paper} className="billtable1">
             <Table stickyHeader  aria-label="simple table">
-              <TableHead >
-                <TableRow className="rowname" >
-                  <TableCell className="r1" align="center">
+              <TableHead>
+                <TableRow className="rowname" 
+                // sx={{ zIndex: -1, position: "relative"}}
+                >
+                  <TableCell className="r1" align="center" >
                     Invoice
                   </TableCell>
                   <TableCell className="r1" align="center">

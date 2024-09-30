@@ -3,7 +3,7 @@ import Header from "./Header";
 import LoginPageImage from "../../assets/hero-img.png.svg";
 import GetStartImage from "../../assets/elec 1.svg";
 import Features from "../../assets/features.svg";
-import Services from "../../assets/services.svg";
+// import Services from "../../assets/services.svg";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
@@ -87,9 +87,9 @@ const LandingPage = () => {
        
         <br />
         <br />
-        <div className="a4">
+        {/* <div className="a4">
           <img src={Services} alt="app_img"></img>
-        </div>
+        </div> */}
       </div>
       <br />
       <div className="footer">

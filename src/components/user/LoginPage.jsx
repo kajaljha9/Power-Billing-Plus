@@ -28,69 +28,61 @@ const LoginPage = () => {
     <>
       <Header />
       <div className="LoginPage">
-        <div className="login">
-          <div className="loginfo">
-            <h2>Power Billing Plus</h2>
-            <br />
-            <h3>User Login</h3>
-            <br />
-            <TextField
+        <div className="loginfo">
+          <h2>Power Billing Plus</h2>
+          <br />
+          <h3>User Login</h3>
+          <br />
+          <TextField
+            id="textField"
+            label="Email address"
+            variant="filled"
+            style={{  position: "relative" }} // Adjust zIndex and position as needed
+          />
+
+          <br />
+          <br />
+          <FormControl sx={{ width: "25ch" }} variant="filled">
+            <InputLabel htmlFor="filled-adornment-password">
+              Password
+            </InputLabel>
+            <FilledInput
               id="textField"
-              label="Email address"
-              variant="filled"
-              style={{ zIndex: -1, position: "relative" }} // Adjust zIndex and position as needed
+              style={{ position: "relative" }}
+              type={showPassword ? "text" : "password"}
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={handleClickShowPassword}
+                    onMouseDown={handleMouseDownPassword}
+                    edge="end"
+                  >
+                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              }
             />
+          </FormControl>
+          <br />
+          <br />
 
-            <br />
-            <br />
-            <FormControl sx={{ width: "25ch" }} variant="filled">
-              <InputLabel htmlFor="filled-adornment-password">
-                Password
-              </InputLabel>
-              <FilledInput
-              id="textField"
-                style={{ zIndex: -1, position: "relative" }}
-                
-                type={showPassword ? "text" : "password"}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
-                      edge="end"
-                    >
-                      {showPassword ? <VisibilityOff /> : <Visibility />}
-                    </IconButton>
-                  </InputAdornment>
-                }
-              />
-            </FormControl>
-            <br />
-            <br />
-
-            <div>
-              <Button variant="contained">Login</Button>
-            </div>
-
-            <br />
-
-            <div className="fp">
-              <a href="##" onClick={() => navigate("/forgotpassword")}>
-                Forgot password?
-              </a>
-            </div>
+          <div>
+            <Button variant="contained">Login</Button>
           </div>
 
-          <div className="loginImage">
-            <img
-              className="loginImage2"
-              src={LoginPageImage}
-              alt="app_img"
-            ></img>
+          <br />
+
+          <div className="fp">
+            <a href="##" onClick={() => navigate("/forgotpassword")}>
+              Forgot password?
+            </a>
           </div>
         </div>
-        <br />
+
+        <div className="loginImage">
+          <img className="loginImage2" src={LoginPageImage} alt="app_img"></img>
+        </div>
       </div>
       <Footer />
     </>

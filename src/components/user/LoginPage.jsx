@@ -13,77 +13,94 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Box, Typography, Grid } from "@mui/material";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = React.useState(false);
-
   const handleClickShowPassword = () => setShowPassword((show) => !show);
-
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
-
+  const handleMouseDownPassword = (event) => event.preventDefault();
   const navigate = useNavigate();
+
   return (
     <>
       <Header />
-      <div className="LoginPage">
-        <div className="loginfo">
-          <h2>Power Billing Plus</h2>
-          <br />
-          <h3>User Login</h3>
-          <br />
-          <TextField
-            id="textField"
-            label="Email address"
-            variant="filled"
-            style={{  position: "relative" }} // Adjust zIndex and position as needed
-          />
-
-          <br />
-          <br />
-          <FormControl sx={{ width: "25ch" }} variant="filled">
-            <InputLabel htmlFor="filled-adornment-password">
-              Password
-            </InputLabel>
-            <FilledInput
-              id="textField"
-              style={{ position: "relative" }}
-              type={showPassword ? "text" : "password"}
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                    edge="end"
-                  >
-                    {showPassword ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
+      <Box
+        className="LoginPage"
+        sx={{ padding: { xs: "20px", md: "40px" }, backgroundColor: "#f0f4ff" }}
+      >
+        <Grid container spacing={4} alignItems="center">
+          <Grid item xs={12} md={6}>
+            <Box className="loginfo" sx={{ textAlign: "center" }}>
+              <Typography
+                variant="h4"
+                component="h2"
+                sx={{ fontWeight: "bold", marginBottom: 2 }}
+              >
+                Power Billing Plus
+              </Typography>
+              <Typography variant="h5" sx={{ marginBottom: 4 }}>
+                User Login
+              </Typography>
+              <Typography variant="h6" sx={{ marginBottom: 4 }}>
+                You can only login if you are registered from the admin!
+              </Typography>
+              <TextField
+                id="username"
+                label="Enter Username"
+                variant="filled"
+                fullWidth
+                sx={{ marginBottom: 2 }}
+              />
+              <FormControl variant="filled" fullWidth sx={{ marginBottom: 2 }}>
+                <InputLabel htmlFor="filled-adornment-password">
+                  Password
+                </InputLabel>
+                <FilledInput
+                  id="password"
+                  type={showPassword ? "text" : "password"}
+                  endAdornment={
+                    <InputAdornment sx={{ width: "auto" }}>
+                      <IconButton
+                        aria-label="toggle password visibility"
+                        onClick={handleClickShowPassword}
+                        onMouseDown={handleMouseDownPassword}
+                      >
+                        {showPassword ? <VisibilityOff /> : <Visibility />}
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                />
+              </FormControl>
+              <Button
+                variant="contained"
+                onClick={() => {
+                  /* Handle login */
+                }}
+                fullWidth
+              >
+                Login
+              </Button>
+              <Box sx={{ marginTop: 2 }}>
+                <a
+                  href="##"
+                  onClick={() => navigate("/forgotpassword")}
+                  className="fp"
+                >
+                  Forgot password?
+                </a>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
+            <img
+              className="loginImage"
+              src={LoginPageImage}
+              alt="Login Illustration"
+              style={{ width: "100%", maxWidth: "400px" }}
             />
-          </FormControl>
-          <br />
-          <br />
-
-          <div>
-            <Button variant="contained">Login</Button>
-          </div>
-
-          <br />
-
-          <div className="fp">
-            <a href="##" onClick={() => navigate("/forgotpassword")}>
-              Forgot password?
-            </a>
-          </div>
-        </div>
-
-        <div className="loginImage">
-          <img className="loginImage2" src={LoginPageImage} alt="app_img"></img>
-        </div>
-      </div>
+          </Grid>
+        </Grid>
+      </Box>
       <Footer />
     </>
   );

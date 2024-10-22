@@ -2,30 +2,14 @@
   margin: 0;
   padding: 0;
 }
- 
-.OldBills {
-  /* border: 2px solid green; */
-  height: 73vh;
-  width: 80vw;
-  margin: auto;
-}
-
-/* .css-og52vs-MuiTableCell-root.MuiTableCell-head {
-  background-color: #1d4ea3 !important;
-} */
-
-.css-1dydcym-MuiTableCell-root {
-  color: #9da9b9 !important;
-}
 
 @media (max-width: 768px) {
   .OldBills {
-    /* border:2px solid green; */
-    height: 65vh;
+    padding: 0px;
   }
-
-  .table2 {
-    /* border:2px solid pink; */
-    height: 55vh;
+}
+@media (max-width: 600px) {
+  .OldBills {
+   padding:0px;
   }
 }

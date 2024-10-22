@@ -1,55 +1,10 @@
-// import "./ForgotPassword.css";
-// import Button from "@mui/material/Button";
-// import LoginPageImage from "../../assets/hero-img.png.svg";
-// import Header from "./Header";
-// import Footer from "./Footer";
 
-// const ForgotPassword = () => {
-//   return (
-//     <>
-//     <Header/>
-//     <div className="ForgotPassword">
-
-//       <div className="fp1">
-
-//         <div id="left_child">
-//         <h3>Forgot Password</h3>
-//           <div>
-//             <h5>Enter the OTP code: </h5>
-//           </div>
-//           <div className="otpdiv">
-//             <input id="otp" value="0" />
-//             <input id="otp" value="0" />
-//             <input id="otp" value="0" />
-//             <input id="otp" value="0" />
-//           </div>
-//           <br />
-//           <div>
-//             <p>We have sent OTP code in your Gmail account.</p>
-//           </div>
-//           <br />
-//           <div className="proceed">
-//             {" "}
-//             <Button variant="contained">PROCEED</Button>
-//           </div>
-//         </div>
-//       </div>
-//       <div  id="right_child" className="imagefp">
-//         <img src={LoginPageImage} alt="app_img"></img>
-//       </div>
-//     </div>
-//     <br/>
-//     <Footer/>
-//     </>
-//   );
-// };
-
-// export default ForgotPassword;
 
 import { Button, Grid, TextField, Typography, Box } from "@mui/material";
 import LoginPageImage from "../../assets/hero-img.png.svg";
 import Header from "./Header";
 import Footer from "./Footer";
+import "./ForgotPassword.css";
 
 const ForgotPassword = () => {
   return (
@@ -57,28 +12,30 @@ const ForgotPassword = () => {
       <Header />
       <Box
         sx={{
-          margin: "2.5% 0% 4% 0%",
+          margin: "2.5% 0 4% 0",
           display: "flex",
           justifyContent: "center",
-          padding: "0% 2%",
+          padding: "0 2%"
         }}
       >
         <Grid
           container
           spacing={2}
-          sx={{ alignItems: "center", justifyContent: "space-around" }}
+          sx={{ alignItems: "center", justifyContent: "center" }}
         >
           <Grid item xs={12} md={6}>
             <Box
               sx={{
-                padding: "2%",
-                backgroundColor: "#f6f9ff",
-                borderRadius: "5%",
-                boxShadow: 1,
+                padding: "2rem",
+                borderRadius: "8px",
+                boxShadow: 2,
                 textAlign: "center",
+                backgroundColor: "#f6f9ff"
               }}
             >
-              <Typography variant="h5">Forgot Password</Typography>
+              <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+                Forgot Password
+              </Typography>
               <Typography variant="h6" sx={{ margin: "1rem 0" }}>
                 Enter the OTP code:
               </Typography>
@@ -86,7 +43,7 @@ const ForgotPassword = () => {
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  marginBottom: "1rem",
+                  marginBottom: "1rem"
                 }}
               >
                 {Array.from({ length: 4 }, (_, index) => (
@@ -96,16 +53,21 @@ const ForgotPassword = () => {
                     variant="outlined"
                     sx={{ width: "40px", marginLeft: "5px" }}
                     inputProps={{ maxLength: 1 }}
+                    size="small"
                   />
                 ))}
               </Box>
-              <Typography variant="body1">
-                We have sent an OTP code to your Gmail account.
+              <Typography variant="body1" sx={{ color: "#555" }}>
+                We have sent an OTP code to your email address.
               </Typography>
               <Box sx={{ marginTop: "2rem" }}>
                 <Button
                   variant="contained"
-                  sx={{  width: "auto" }}
+                  sx={{
+                    width: "auto",
+                    backgroundColor: "#4154F1",
+                    "&:hover": { backgroundColor: "#3148C5" }
+                  }}
                 >
                   PROCEED
                 </Button>
@@ -115,7 +77,7 @@ const ForgotPassword = () => {
           <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
             <img
               src={LoginPageImage}
-              alt="app_img"
+              alt="Forgot Password Illustration"
               style={{ width: "70%", maxWidth: "300px" }}
             />
           </Grid>

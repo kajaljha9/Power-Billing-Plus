@@ -30,8 +30,9 @@ const AddUser = () => {
 
   return (
     <div className="AddUser">
-    <div className="gnav"><Navbar /></div>
-      
+      <div className="gnav">
+        <Navbar />
+      </div>
 
       <div className="adduserDetails">
         <div className="udhead">
@@ -41,32 +42,26 @@ const AddUser = () => {
         <br />
         <div className="details">
           <FormControl variant="outlined">
-            <InputLabel htmlFor="outlined-adornment-password">
-              Service No.
-            </InputLabel>
-            <OutlinedInput
-              id="outlined-adornment-password"
-              label="Service No."
-            />
+            <InputLabel htmlFor="outlined-adornment">Full Name</InputLabel>
+            <OutlinedInput id="outlined-adornment" label="Full Name" />
           </FormControl>
 
           <FormControl variant="outlined">
-            <InputLabel htmlFor="outlined-adornment-password">
-              Full Name
-            </InputLabel>
-            <OutlinedInput id="outlined-adornment-password" label="Full Name" />
+            <InputLabel htmlFor="outlined-adornment">Username</InputLabel>
+            <OutlinedInput id="outlined-adornment" label="Username" />
           </FormControl>
 
-          <Grid container gap={1}>
-            <Grid item md={7}>
+          <Grid
+            container
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <Grid item md={6.5}>
               <FormControl className="add" variant="outlined" fullWidth>
-                <InputLabel htmlFor="outlined-adornment-password">
-                  Address
-                </InputLabel>
+                <InputLabel htmlFor="outlined-adornment">Address</InputLabel>
                 <OutlinedInput
-                  id="outlined-adornment-password"
+                  id="outlined-adornment"
                   endAdornment={
-                    <InputAdornment>
+                    <InputAdornment sx={{ width: "auto" }}>
                       <IconButton>
                         <LocationOn />
                       </IconButton>
@@ -77,15 +72,13 @@ const AddUser = () => {
               </FormControl>
             </Grid>
 
-            <Grid item md={4}>
+            <Grid item md={5}>
               <FormControl variant="outlined" fullWidth>
-                <InputLabel htmlFor="outlined-adornment-password">
-                  Phone No.
-                </InputLabel>
+                <InputLabel htmlFor="outlined-adornment">Phone No.</InputLabel>
                 <OutlinedInput
-                  id="outlined-adornment-password"
+                  id="outlined-adornment"
                   endAdornment={
-                    <InputAdornment>
+                    <InputAdornment sx={{ width: "auto" }}>
                       <IconButton>
                         <LocalPhone />
                       </IconButton>
@@ -98,11 +91,11 @@ const AddUser = () => {
           </Grid>
 
           <FormControl variant="outlined">
-            <InputLabel htmlFor="outlined-adornment-password">Email</InputLabel>
+            <InputLabel htmlFor="outlined-adornment">Email</InputLabel>
             <OutlinedInput
-              id="outlined-adornment-password"
+              id="outlined-adornment"
               endAdornment={
-                <InputAdornment>
+                <InputAdornment sx={{ width: "auto" }}>
                   <IconButton>
                     <Email />
                   </IconButton>
@@ -120,12 +113,11 @@ const AddUser = () => {
               id="outlined-adornment-password"
               type={showPassword ? "text" : "password"}
               endAdornment={
-                <InputAdornment position="end">
+                <InputAdornment sx={{ width: "auto" }}>
                   <IconButton
                     aria-label="toggle password visibility"
                     onClick={handleClickShowPassword}
                     onMouseDown={handleMouseDownPassword}
-                    edge="end"
                   >
                     {showPassword ? <VisibilityOff /> : <Visibility />}
                   </IconButton>

@@ -97,14 +97,14 @@ const Header = () => {
                   About
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className="link" 
                 to="/"
                 data-goto="features" onClick={goToSection}
                 >
                   Features
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link className="link" to="/profile">
                   Profile
@@ -115,11 +115,7 @@ const Header = () => {
                   Bill
                 </Link>
               </li>
-              <li>
-                <Link className="link" to="/signup">
-                  SignUp
-                </Link>
-              </li>
+             
               <li>
                 <Link className="link" to="/login">
                   Login

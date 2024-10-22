@@ -4,72 +4,57 @@
 }
 
 .ViewBill {
-  /* border: 2px solid pink; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 66vh;
-  width:80vw;
-  margin:auto;
+  width: 80vw;
+  height:85vh;
+  margin: 0 auto;
+  /* padding: 20px 0; */
+    /* border: 2px solid greenyellow; */
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+    padding: 3rem;
+    margin-top: 10px;
+    width:70vw;
+    margin:auto;
 }
 
 .vob {
-  /* border:2px solid yellow; */
-  display: flex;
-  justify-content: flex-end;
-  width: -webkit-fill-available;
-}
-
-.head h3 {
-  color: #444444;
-}
-
-.viewbtn {
+  /* border:2px solid pink; */
   display: flex;
   justify-content: flex-end;
 }
-
-.vob {
-  display: flex;
-  justify-content: flex-end;
-  width: fit-content;
+.billtable{
+  /* border:2px solid purple; */
+  padding:0;
+  margin-top:0;
 }
 
-.billtable, .billtable1 {
+.billtable1 {
   /* border:2px solid green; */
-  height:50vh;
+  padding:0;
+  margin:0;
+  height: 55vh;
+ 
 }
 
-
-.css-1yhpg23-MuiTableCell-root {
-  color: #686f79 !important;
-}
-
-.btn2 , .viewbtn{
+.btn2,
+.viewbtn {
   background-color: #1d4ea3 !important;
 }
 
-
-
-
-/* Responsive styling */
-
-
 @media (max-width: 768px) {
-
   .ViewBill {
-    /* border:2px solid purple; */
-    width:100vw;
-    height:70vh;
+    width: 100vw;
+    padding: 10px;
   }
   .billtable {
-    /* border:2px solid red; */
-    width:100% !important;
-    
-    
+    width: 100% !important;
   }
-  .billtable1{
-    /* border:2px solid green; */
-    margin: 0 -5rem 0 2rem !important;
+  .billtable1 {
+    margin: 0 !important;
   }
 }

@@ -1,65 +1,79 @@
 .Profile {
-  /* border: 5px solid red; */
-  height: 70vh;
-  /* margin-top: 6rem; */
+  height: auto;
+  /* padding: 20px; */
+  background-color: #f0f4ff;
 }
-.p1 {
-  display: flex;
-  justify-content: center;
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .card {
-  /* border: 5px solid green; */
-  padding: 1%;
-  border-radius: 1%;
-  width: 40%;
-  margin: auto;
-  margin-bottom: 5%;
+  max-width: 700px;
   display: flex;
-  gap: 15% !important;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 5%;
-  background-color: #f6f9ff;
+  gap: 4rem;
+  justify-content: space-around;
+  /* border: 2px solid greenyellow; */
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+  padding: 3rem;
+  margin-top: 10px;
+  margin: 2rem auto;
+}
+
+.div1 {
+  /* border:2px solid red; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
 }
 
 .div1 img {
   width: 100%;
+  border-radius: 10px;
   object-fit: cover;
-  height: 95%;
-}
-.div1 {
-  width: 40%;
-  display: flex;
-  align-content: center;
-}
-.div2 {
-  /* border:2px solid brown; */
-  width: 60%;
-  display: flex;
-  padding: 0% 0% 5% 0%;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 5% !important;
-  margin: 0% !important;
-}
-.div2 button {
-  width: 50%;
-  padding: 5px !important;
 }
 
-p {
-  margin: 0% !important;
+.div2 {
+  /* border:2px solid green; */
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.div2 h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.div2 p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.div2 button {
+  align-self: flex-start;
+  width: auto;
+  padding: 8px 16px;
 }
 
 @media (max-width: 768px) {
   .Profile {
-    /* border: 2px solid green; */
-    height: 70vh;
+    padding: 10px;
   }
   .card {
-    /* border: 2px solid red; */
-    width: 95%;
-    display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+  .div1,
+  .div2 {
+    width: 100%;
   }
 }

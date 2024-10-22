@@ -1,50 +1,34 @@
-.head {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .LoginPage {
-  /* border:2px solid red; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  /* height: 63vh; */
+  background-color: #f0f4ff;
+  padding: 40px 20px;
 }
-
 
 .loginfo {
-  /* border:2px solid; */
-  width: 30rem !important;
-  margin-left: 10%;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
 .fp a {
   text-decoration: none;
-  /* color: #6c757d; */
+  color: #4154f1;
+}
+
+.fp a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  .LoginPage {
-    /* border: 2px solid green; */
-    height: 74vh;
+  .loginfo {
+    width: 90vw;
   }
 
-  .login {
-    /* border: 2px solid red; */
-    display:flex;
-    flex-direction: column;
-    /* width:auto; */
-  }
-
-  .loginfo{
-    /* border: 2px solid purple; */
-    width:55vw !important;
-    margin:auto;
-  }
-   .loginImage2 {
-    /* border: 2px solid pink; */
-    height:25vh;
-    width: 100% !important;
-    margin:auto;
+  .loginImage {
+    /* height: auto;
+    max-width: 300px;  */
+    display: none;
   }
 }

@@ -9,34 +9,27 @@ const Profile = () => {
     <>
       <Header />
       <div className="Profile">
-      <br/>
-        <div className="p1">
-          <h2>Your Profile</h2>
-        </div>
-        <br/>
+        <h2 className="profile-title">Your Profile</h2>
         <div className="card">
           <div className="div1">
-            <img src={Image1} alt="img"></img>
+            <img src={Image1} alt="Profile" />
           </div>
           <div className="div2">
-            <p>Name : Albina Shrestha</p><br/>
-            <p>Address : Nakhipot</p><br/>
-            <p>Phone no : 9999999999</p><br/>
-            <p>Email : albina@gmail.com</p><br/>
-            <p>Password : *******</p><br/>
-            <p>SCNO : 14596A</p><br/>
-            <p>Customer ID : 11926</p><br/>
-            <Button variant="contained" color="success" 
-            // style={{ zIndex: -1, position: "relative" }}
-            >Edit
+            <h3>Profile Details</h3>
+            <p>Name: Albina Shrestha</p>
+            <p>Username: albinashrestha</p>
+            <p>Address: Nakhipot</p>
+            <p>Phone No: 9999999999</p>
+            <p>Email: albina@gmail.com</p>
+            <p>Password: *******</p>
+            <Button variant="contained" color="success">
+              Edit
             </Button>
           </div>
         </div>
       </div>
-      
-     <Footer />
+      <Footer />
     </>
   );
 };
-
 export default Profile;

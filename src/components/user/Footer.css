@@ -99,7 +99,8 @@ p {
   flex-direction: row;
   /* margin: auto; */
   bottom: 0;
-  background-color: rgb(220, 219, 219);
+  /* background-color: rgb(220, 219, 219); */
+  background-color: #f6f9ff;
   padding-top: 20px;
   border: 1px;
   box-shadow: 5px;

@@ -1,40 +1,35 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-.AdminLogin {
-  /* border:2px solid red; */
+ .AdminLogin {
   display: flex;
-  justify-content: center;
-  height: 100vh;
-  overflow-y: hidden;
-}
-
-.left {
-  /* border: 2px solid rgb(55, 119, 61); */
-  width: auto;
   flex-direction: column;
-  padding: 10%;
+  align-items: center;
+  background-color: #f0f4ff;
+  padding: 40px 20px;
+  min-height: 100vh;
 }
 
-.right {
-  /* border: 2px solid black; */
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
+.loginfo {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
-.right img {
-  /* border: 1px solid pink; */
-  object-fit: cover;
-  width: 80%;
-  border-radius: 0% 0% 0% 23%;
-  height: 100vh;
-  background-size: 100% 100% !important;
-}
-
-.fplink a {
+.fp a {
   text-decoration: none;
+  color: #4154f1;
+}
+
+.fp a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .loginfo {
+    width: 90vw;
+  }
+
+  .loginImage {
+    display: none; 
+  }
 }

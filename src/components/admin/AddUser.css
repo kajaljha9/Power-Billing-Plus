@@ -1,17 +1,19 @@
 .AddUser {
-  /* border: 3px solid green; */
-  height: 90vh;
+  /* border: 3px solid green;   */
+  height: 100vh;
   display: flex;
 }
 
 .adduserDetails {
-  /* border: 3px solid brown; */
-  padding: 1%;
-  margin: 2% 0% 0% 2%;
-  width: 70%;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 5%;
-  background-color: #f6f9ff;
+  /* border: 2px solid greenyellow; */
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+  padding: 3rem;
+  /* margin-top: 10px;  */
+  width: 60vw;
+  margin: auto;
 }
 
 .details {
@@ -37,14 +39,12 @@
 @media (max-width: 768px) {
   .adduserDetails {
     /* border: 2px solid green; */
-    height:65vh;
-    width: fit-content ;
-   
-    margin : 4.5rem 3rem 0 0
-  
+    height: 65vh;
+    width: fit-content;
+
+    margin: 4.5rem 3rem 0 0;
   }
-  .details{
+  .details {
     /* border: 2px solid red; */
   }
-
 }

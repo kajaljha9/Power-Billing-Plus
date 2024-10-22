@@ -46,7 +46,7 @@ const ManageUser = () => {
             Add User
           </Button>
         </div>
-        <br /> <br />
+       
         <div className="udtablebody">
           <div className="udetail">
             <h2>User Details</h2>
@@ -57,22 +57,22 @@ const ManageUser = () => {
               <Table stickyHeader size="small" aria-label="a dense table">
                 <TableHead>
                   <TableRow>
-                    <TableCell sx={{ width: "auto" }} align="left">
+                    <TableCell sx={{backgroundColor:"#1D4EA3" ,color:"#fff", width: "auto" }} align="left">
                       Name
                     </TableCell>
-                    <TableCell sx={{ width: "auto" }} align="left">
+                    <TableCell sx={{ backgroundColor:"#1D4EA3" ,color:"#fff",width: "auto" }} align="left">
                       Address
                     </TableCell>
-                    <TableCell sx={{ width: "auto" }} align="left">
+                    <TableCell sx={{backgroundColor:"#1D4EA3" ,color:"#fff", width: "auto" }} align="left">
                       UID
                     </TableCell>
-                    <TableCell sx={{ width: "auto" }} align="left">
+                    <TableCell sx={{ backgroundColor:"#1D4EA3" ,color:"#fff",width: "auto" }} align="left">
                       Service No.
                     </TableCell>
-                    <TableCell sx={{ width: "auto" }} align="left">
+                    <TableCell sx={{backgroundColor:"#1D4EA3" ,color:"#fff", width: "auto" }} align="left">
                       Amount
                     </TableCell>
-                    <TableCell sx={{ width: "auto" }} align="left">
+                    <TableCell sx={{ backgroundColor:"#1D4EA3" ,color:"#fff",width: "auto" }} align="left">
                       Action
                     </TableCell>
                   </TableRow>
